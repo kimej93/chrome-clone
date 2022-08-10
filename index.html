@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Momentum</title>
+  </head>
+  <body>
+    <form class="hidden login" id="login-form">
+      <input
+        class="login__name"
+        required
+        maxlength="15"
+        type="text"
+        placeholder="What is your name?"
+      />
+      <input class="login__btn" type="submit" value="Log In" />
+    </form>
+
+    <div class="contents-box">
+      <div class="contents-column">
+        <h1 id="greeting" class="hidden greeting"></h1>
+        <h5 class="todo__title">ToDo List</h5>
+
+        <form class="todo-form" id="todo-form">
+          <input
+            class="todo-form__text"
+            type="text"
+            placeholder="Write a To Do and Press Enter"
+            required
+          />
+        </form>
+        <ul id="todo-list" class="todo-list"></ul>
+      </div>
+
+      <div class="contents-column">
+        <div class="date-box">
+          <div class="date">
+            <h2 class="date__day" id="day">0000.00.00</h2>
+            <h2 class="date__clock" id="clock">00:00:00</h2>
+          </div>
+
+          <div id="weather" class="weather">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="quote-box">
+          <div id="quote" class="quote">
+            <p></p>
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contents-column">
+        <canvas></canvas>
+        <div class="range-box">
+          <input
+            type="range"
+            id="line-width"
+            min="1"
+            max="10"
+            step="0.5"
+            value="1"
+          />
+          <button id="mode-btn">
+            <i class="fa-solid fa-paintbrush fa-lg"></i>
+          </button>
+          <button id="destory-btn">
+            <i class="fa-solid fa-paint-roller fa-lg"></i>
+          </button>
+          <button id="eraser-btn">
+            <i class="fa-solid fa-eraser fa-lg"></i>
+          </button>
+        </div>
+
+        <div class="colors">
+          <input type="color" id="color-change" />
+          <div
+            class="colors-option"
+            style="background: #e74c3c"
+            data-color="#e74c3c"
+          ></div>
+          <div
+            class="colors-option"
+            style="background: #e67e22"
+            data-color="#e67e22"
+          ></div>
+          <div
+            class="colors-option"
+            style="background: #f1c40f"
+            data-color="#f1c40f"
+          ></div>
+          <div
+            class="colors-option"
+            style="background: #27ae60"
+            data-color="#27ae60"
+          ></div>
+          <div
+            class="colors-option"
+            style="background: #2980b9"
+            data-color="#2980b9"
+          ></div>
+          <div
+            class="colors-option"
+            style="background: #2c3e50"
+            data-color="#2c3e50"
+          ></div>
+          <div
+            class="colors-option"
+            style="background: #8e44ad"
+            data-color="#8e44ad"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="JS/greetings.js"></script>
+    <script type="text/javascript" src="JS/clock.js"></script>
+    <script type="text/javascript" src="JS/quotes.js"></script>
+    <script type="text/javascript" src="JS/todo.js"></script>
+    <script type="text/javascript" src="JS/weather.js"></script>
+    <script type="text/javascript" src="JS/canvas.js"></script>
+    <script
+      src="https://kit.fontawesome.com/58531aeaaa.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
